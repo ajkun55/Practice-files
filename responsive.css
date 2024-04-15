@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(77, 50, 50);
+    min-height: 100vh;
+}
+.test{
+    margin: 5rem 0 0 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 300px 300px;
+    background-color: aliceblue;
+    gap:30px;    
+}
+.box{
+    background-color: rgb(227, 135, 135);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.box:nth-child(3){
+    height: 20rem;
+}
+.box:nth-child(4){
+    height: 20rem;
+}
+.box p{
+    background-color: aquamarine;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+@media (max-width:700px){
+    .test{
+        grid-template-columns: minmax(100px, 1fr);
+    }
+}
